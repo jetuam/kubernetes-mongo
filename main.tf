@@ -14,7 +14,7 @@ resource "aws_instance" "myfirst_instance" {
               sudo apt install apache2 -y
               sudo systemctl start apache2
               sudo bash -c 'echo First web server using terraform > /var/www/html/index.html'
-              sudp apt-get install docker.io -y
+              sudo apt-get install docker.io -y
               EOF
 
   tags = {
